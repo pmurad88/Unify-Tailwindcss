@@ -830,7 +830,6 @@ input:focus{
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   padding-left: 2.25rem;
-  padding-right: 2.25rem;
   --tw-text-opacity: 1;
   color: rgb(81 89 108 / var(--tw-text-opacity));
 }
@@ -901,6 +900,22 @@ input:focus{
   position: relative;
 }
 
+.top-\[34\%\]{
+  top: 34%;
+}
+
+.-right-20{
+  right: -5rem;
+}
+
+.-left-28{
+  left: -7rem;
+}
+
+.top-\[30\%\]{
+  top: 30%;
+}
+
 .right-\[-67px\]{
   right: -67px;
 }
@@ -919,10 +934,6 @@ input:focus{
 
 .left-\[-23\%\]{
   left: -23%;
-}
-
-.top-\[34\%\]{
-  top: 34%;
 }
 
 .right-\[-2\%\]{
@@ -951,22 +962,6 @@ input:focus{
 
 .right-0{
   right: 0px;
-}
-
-.left-\[-9\%\]{
-  left: -9%;
-}
-
-.top-\[30\%\]{
-  top: 30%;
-}
-
-.-right-20{
-  right: -5rem;
-}
-
-.-left-28{
-  left: -7rem;
 }
 
 .-z-10{
@@ -1038,6 +1033,10 @@ input:focus{
   display: block;
 }
 
+.inline-block{
+  display: inline-block;
+}
+
 .flex{
   display: flex;
 }
@@ -1100,6 +1099,10 @@ input:focus{
 
 .max-w-\[144px\]{
   max-width: 144px;
+}
+
+.max-w-\[225px\]{
+  max-width: 225px;
 }
 
 .transform{
@@ -1191,6 +1194,14 @@ input:focus{
 
 .gap-y-2{
   row-gap: 0.5rem;
+}
+
+.gap-y-7{
+  row-gap: 1.75rem;
+}
+
+.gap-y-4{
+  row-gap: 1rem;
 }
 
 .overflow-hidden{
@@ -1384,6 +1395,18 @@ input:focus{
 
 .pr-2{
   padding-right: 0.5rem;
+}
+
+.pb-2{
+  padding-bottom: 0.5rem;
+}
+
+.pl-20{
+  padding-left: 5rem;
+}
+
+.pl-16{
+  padding-left: 4rem;
 }
 
 .text-center{
@@ -1616,6 +1639,10 @@ body.active{
     margin-top: 0px;
   }
 
+  .sm\:mt-12{
+    margin-top: 3rem;
+  }
+
   .sm\:flex{
     display: flex;
   }
@@ -1624,8 +1651,20 @@ body.active{
     display: grid;
   }
 
+  .sm\:max-w-\[225px\]{
+    max-width: 225px;
+  }
+
+  .sm\:max-w-full{
+    max-width: 100%;
+  }
+
   .sm\:flex-1{
     flex: 1 1 0%;
+  }
+
+  .sm\:grid-cols-2{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .sm\:border-b-0{
@@ -1648,6 +1687,10 @@ body.active{
 
   .sm\:pb-0{
     padding-bottom: 0px;
+  }
+
+  .sm\:text-left{
+    text-align: left;
   }
 }
 
@@ -1711,6 +1754,10 @@ body.active{
     margin-top: 7rem;
   }
 
+  .lg\:mt-0{
+    margin-top: 0px;
+  }
+
   .lg\:block{
     display: block;
   }
@@ -1763,6 +1810,10 @@ body.active{
     padding-left: 7rem;
   }
 
+  .lg\:pl-16{
+    padding-left: 4rem;
+  }
+
   .lg\:text-6xl{
     font-size: 3.75rem;
     line-height: 1;
@@ -1770,6 +1821,16 @@ body.active{
 
   .group:nth-child(odd) .lg\:group-odd\:order-3{
     order: 3;
+  }
+}
+
+@media (min-width: 1170px){
+  .xl\:grid-cols-2{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .xl\:pl-28{
+    padding-left: 7rem;
   }
 }
 

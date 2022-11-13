@@ -112,7 +112,7 @@
         @apply relative py-2 px-9 ;
     }
     .list-checked-item li {
-        @apply relative py-2 px-9 text-secondary ;
+        @apply relative py-2 pl-9 text-secondary ;
     }
     .btn-pointer:hover i{
         right: -10px;
