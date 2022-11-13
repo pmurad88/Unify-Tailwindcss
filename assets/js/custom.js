@@ -27,6 +27,17 @@ $(document).ready(function(){
             },
         }
     });
+    $('body').prepend('<div class="go-top"><i class="fa-solid fa-angle-up"></i></div>')
+     $(window).scroll(function(){
+        if($(window).scrollTop() > 200){
+            $(".go-top").fadeIn();
+        }else{
+            $(".go-top").fadeOut();
+        }
+     });
+     $(".go-top").on('click', function(){
+        $("body, html").animate({scrollTop:0}, 999);
+     });
     
 
 
