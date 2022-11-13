@@ -964,6 +964,14 @@ input:focus{
   right: 0px;
 }
 
+.top-1{
+  top: 0.25rem;
+}
+
+.top-3{
+  top: 0.75rem;
+}
+
 .-z-10{
   z-index: -10;
 }
@@ -1001,6 +1009,10 @@ input:focus{
   margin-top: 3.5rem;
 }
 
+.mt-8{
+  margin-top: 2rem;
+}
+
 .mb-4{
   margin-bottom: 1rem;
 }
@@ -1019,10 +1031,6 @@ input:focus{
 
 .mt-7{
   margin-top: 1.75rem;
-}
-
-.mt-8{
-  margin-top: 2rem;
 }
 
 .mt-5{
@@ -1085,6 +1093,10 @@ input:focus{
   width: 30%;
 }
 
+.w-\[37\%\]{
+  width: 37%;
+}
+
 .max-w-3xl{
   max-width: 48rem;
 }
@@ -1099,10 +1111,6 @@ input:focus{
 
 .max-w-\[144px\]{
   max-width: 144px;
-}
-
-.max-w-\[225px\]{
-  max-width: 225px;
 }
 
 .transform{
@@ -1160,6 +1168,10 @@ input:focus{
   row-gap: 5rem;
 }
 
+.gap-y-4{
+  row-gap: 1rem;
+}
+
 .gap-x-12{
   -moz-column-gap: 3rem;
        column-gap: 3rem;
@@ -1194,14 +1206,6 @@ input:focus{
 
 .gap-y-2{
   row-gap: 0.5rem;
-}
-
-.gap-y-7{
-  row-gap: 1.75rem;
-}
-
-.gap-y-4{
-  row-gap: 1rem;
 }
 
 .overflow-hidden{
@@ -1377,12 +1381,12 @@ input:focus{
   padding-right: 1rem;
 }
 
-.pb-7{
-  padding-bottom: 1.75rem;
-}
-
 .pb-3{
   padding-bottom: 0.75rem;
+}
+
+.pb-7{
+  padding-bottom: 1.75rem;
 }
 
 .pt-6{
@@ -1395,18 +1399,6 @@ input:focus{
 
 .pr-2{
   padding-right: 0.5rem;
-}
-
-.pb-2{
-  padding-bottom: 0.5rem;
-}
-
-.pl-20{
-  padding-left: 5rem;
-}
-
-.pl-16{
-  padding-left: 4rem;
 }
 
 .text-center{
@@ -1444,6 +1436,11 @@ input:focus{
 
 .text-6xl{
   font-size: 3.75rem;
+  line-height: 1;
+}
+
+.text-5xl{
+  font-size: 3rem;
   line-height: 1;
 }
 
@@ -1651,14 +1648,6 @@ body.active{
     display: grid;
   }
 
-  .sm\:max-w-\[225px\]{
-    max-width: 225px;
-  }
-
-  .sm\:max-w-full{
-    max-width: 100%;
-  }
-
   .sm\:flex-1{
     flex: 1 1 0%;
   }
@@ -1703,6 +1692,10 @@ body.active{
     right: 25%;
   }
 
+  .md\:-top-2{
+    top: -0.5rem;
+  }
+
   .md\:mt-0{
     margin-top: 0px;
   }
@@ -1723,6 +1716,18 @@ body.active{
     width: 20%;
   }
 
+  .md\:w-\[30\%\]{
+    width: 30%;
+  }
+
+  .md\:w-\[33\%\]{
+    width: 33%;
+  }
+
+  .md\:w-\[37\%\]{
+    width: 37%;
+  }
+
   .md\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1739,6 +1744,11 @@ body.active{
   .md\:pt-16{
     padding-top: 4rem;
   }
+
+  .md\:text-8xl{
+    font-size: 6rem;
+    line-height: 1;
+  }
 }
 
 @media (min-width: 992px){
@@ -1746,8 +1756,8 @@ body.active{
     right: -96px;
   }
 
-  .lg\:right-\[-2\%\]{
-    right: -2%;
+  .lg\:right-\[-11\%\]{
+    right: -11%;
   }
 
   .lg\:mt-28{
@@ -1776,6 +1786,10 @@ body.active{
 
   .lg\:w-\[30\%\]{
     width: 30%;
+  }
+
+  .lg\:w-\[37\%\]{
+    width: 37%;
   }
 
   .lg\:grid-cols-2{
@@ -1825,10 +1839,6 @@ body.active{
 }
 
 @media (min-width: 1170px){
-  .xl\:grid-cols-2{
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
   .xl\:pl-28{
     padding-left: 7rem;
   }
