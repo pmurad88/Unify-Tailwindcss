@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base{
+    body{
+        @apply font-primary;
+    }
+    h1, h2, h3, h4, h5, h6{
+        @apply text-heading font-bold; 
+    }
+
+    h1{
+        @apply text-5xl;
+    }
+    h2{
+        @apply text-4xl;
+    }
+    h3{
+        @apply text-3xl;
+    }
+    h4{
+        @apply text-2xl;
+    }
+    h5{
+        @apply text-xl;
+    }
+    h6{
+        @apply text-[16px];
+    }
+    p{
+        @apply text-[16px] font-normal;
+    }
+    .line-s{
+        @apply text-[16px] text-heading font-bold;
+    }
+}
+
+@layer components{
+    .btn-secondary{
+        @apply bg-primary hover:bg-gray-10 transition-all duration-700 inline-block text-white text-sm font-semibold py-4 px-8 rounded-md ;
+    }
+    .btn-primary{
+        @apply bg-gray-800 text-white text-lg py-3 px-7 font-bold rounded inline-block;
+    }
+    .btn{
+       @apply  flex items-center px-6 py-3  text-heading  rounded ;
+    }
+    input{
+        @apply focus:outline-none focus:shadow-none;
+    }
+
+    .menutrigger span {
+        @apply h-[2px] w-[30px] bg-black block;
+    }
+    .menutrigger span:nth-child(2) {
+        margin: 6px 0;
+    }
+    .menutrigger.active span:nth-child(2) {
+        opacity: 0;
+    }
+    .menutrigger.active span:nth-child(3) {
+        transform: rotate(-45deg) translateY(-7px) translateX(4px);
+    }
+    .menutrigger.active span:nth-child(1) {
+        transform: rotate(45deg) translateY(7px) translateX(4px);
+    }
+    .mobile-menu .h-menu li a{
+        @apply  text-white hover:text-heading font-semibold;
+    }
+    .mobile-menu {
+        @apply rounded-l-md fixed right-0 bg-primary w-52 h-56 py-3 px-5;
+    }
+    .mobile-menu .h-menu ul li {
+        @apply py-2 border-b-2 border-gray-10;
+    }
+
+
+    .header-menu .h-menu ul{
+        @apply flex gap-x-10 items-center text-lg font-normal;
+    }
+    .avatar img{
+        @apply rounded-full bg-white p-[2px];
+    }
+    .list-checked li::before {
+        content: "\f058";
+        font-family: "Font Awesome 6 Free";
+        @apply  text-gray-20 bg-primary items-center left-0 font-bold text-2xl rounded-full w-6 h-6 flex absolute ;
+    }
+    .list-item li::before {
+        content: "\f058";
+        font-family: "Font Awesome 6 Free";
+        @apply  text-gray-900 bg-primary items-center left-0 font-bold text-2xl rounded-full w-6 h-6 flex absolute ;
+    }
+    .list-checked-item li::before {
+        content: "\f058";
+        font-family: "Font Awesome 6 Free";
+        @apply  text-gray-500 bg-gray-400 items-center left-0 font-bold text-2xl rounded-full w-6 h-6 flex absolute ;
+    }
+    .list-checked-item li.cross::before {
+        content: "\f00d";
+        @apply text-gray-700 bg-gray-600 items-center justify-center left-0 font-bold text-xl rounded-full w-6 h-6 flex absolute;
+    }
+
+    .list-checked li {
+        @apply relative py-2 px-9 ;
+    }
+    .list-item li {
+        @apply relative py-2 px-9 ;
+    }
+    .list-checked-item li {
+        @apply relative py-2 px-9 text-secondary ;
+    }
+    .btn-pointer:hover i{
+        right: -10px;
+    }
+    .btn-pointer i{
+        right: 0;
+    }
+    .swiper-slide::before {
+        @apply content-[""] absolute block bg-white rounded-full w-6 h-6  -bottom-11 shadow-md;
+    }
+    .swiper-slide::after {
+        @apply content-[""] absolute h-2 w-2 bg-primary rounded-full -translate-y-1/2 block left-2 -bottom-10;
+    }
+    .footer-list li {
+        @apply  pt-2;
+    }
+    .footer-list li a {
+        @apply text-gray-1000 hover:text-white;
+    }
+
+}
+.owl-nav button {
+    border: 1px solid !important;
+    font-size: 28px !important;
+    @apply !text-gray-100 w-[45px] h-[45px] rounded-[20%] m-1 flex justify-center items-center hover:!text-primary transition-all duration-500;
+}
+
+.owl-nav{
+    @apply justify-end w-full absolute flex right-4 top-0 sm:-top-16 ;
+}
+body.active{
+    @apply overflow-hidden
+}
+
+
