@@ -952,8 +952,8 @@ input:focus{
   top: 0px;
 }
 
-.-top-2{
-  top: -0.5rem;
+.top-3{
+  top: 0.75rem;
 }
 
 .-left-4{
@@ -964,16 +964,12 @@ input:focus{
   right: 0px;
 }
 
-.top-1{
-  top: 0.25rem;
-}
-
-.top-3{
-  top: 0.75rem;
-}
-
 .-z-10{
   z-index: -10;
+}
+
+.z-50{
+  z-index: 50;
 }
 
 .m-auto{
@@ -1091,10 +1087,6 @@ input:focus{
 
 .w-\[30\%\]{
   width: 30%;
-}
-
-.w-\[37\%\]{
-  width: 37%;
 }
 
 .max-w-3xl{
@@ -1429,18 +1421,13 @@ input:focus{
   line-height: 1rem;
 }
 
-.text-8xl{
-  font-size: 6rem;
+.text-5xl{
+  font-size: 3rem;
   line-height: 1;
 }
 
 .text-6xl{
   font-size: 3.75rem;
-  line-height: 1;
-}
-
-.text-5xl{
-  font-size: 3rem;
   line-height: 1;
 }
 
@@ -1716,14 +1703,6 @@ body.active{
     width: 20%;
   }
 
-  .md\:w-\[30\%\]{
-    width: 30%;
-  }
-
-  .md\:w-\[33\%\]{
-    width: 33%;
-  }
-
   .md\:w-\[37\%\]{
     width: 37%;
   }
@@ -1786,10 +1765,6 @@ body.active{
 
   .lg\:w-\[30\%\]{
     width: 30%;
-  }
-
-  .lg\:w-\[37\%\]{
-    width: 37%;
   }
 
   .lg\:grid-cols-2{
