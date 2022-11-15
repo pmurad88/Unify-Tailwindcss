@@ -964,12 +964,12 @@ input:focus{
   right: 0px;
 }
 
-.-z-10{
-  z-index: -10;
-}
-
 .z-50{
   z-index: 50;
+}
+
+.-z-10{
+  z-index: -10;
 }
 
 .m-auto{
@@ -1566,6 +1566,7 @@ body.active{
   display: flex;
   height: 2.5rem;
   width: 2.5rem;
+  cursor: pointer;
   align-items: center;
   justify-content: center;
   border-radius: 9999px;
